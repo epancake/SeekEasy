@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>SeekEasy</title>
+  <link href="https://fonts.googleapis.com/css?family=Cuprum:400,700" rel="stylesheet">
+  <link rel="stylesheet" href="assets/reset.css">
+  <link rel="stylesheet" href="assets/main.css">
+</head>
+<body>
+  <header>
+    <a href="index.html" class="home"><img src="assets/img/home.png" alt="logo" class="home"/></a>
+    <h1>SeekEasy</h1>
+    <a href="add.html" class="add"><img src="assets/img/greenAddIcon.png" alt="logo" class="add"/></a>
+  </header>
+  <main>
+    <form action="#" id="addForm">
+      <h2 class="h2Header">Add a New Restaurant</h2>
+      <ul>
+        <li>
+            <label for="name">Restaurant Name</label>
+            <input type="text" id="name" name="name" value="">
+        </li>
+        <li>
+          <label for="address">Address</label>
+          <input type="text" id="address" name="address" value="">
+        </li>
+        <li>
+          <label for="website">Website</label>
+          <input type="text" id="website" name="website" value="">
+        </li>
+        <li>
+          <label for="MondayStart">Monday: </label>
+          <input type="time" id="MondayStart" name="Monday1" value="17:00">
+          <label for="MondayStop">to </label>
+          <input type="time" id="MondayStop" name="Monday2" value="18:00">
+        </li>
+        <li>
+          <label for="TuesdayStart">Tuesday: </label>
+          <input type="time" id="TuesdayStart" name="Tuesday1" value="17:00">
+          <label for="TuesdayStop">to </label>
+          <input type="time" id="TuesdayStop" name="Tuesday2" value="18:00">
+        </li>
+        <li>
+          <label for="WednesdayStart">Wednesday: </label>
+          <input type="time" id="WednesdayStart" name="Wednesday1" value="17:00">
+          <label for="WednesdayStop">to </label>
+          <input type="time" id="WednesdayStop" name="Wednesday2" value="18:00">
+        </li>
+        <li>
+          <label for="ThursdayStart">Thursday: </label>
+          <input type="time" id="ThursdayStart" name="Thursday1" value="17:00">
+          <label for="ThursdayStop">to </label>
+          <input type="time" id="ThursdayStop" name="Thursday2" value="18:00">
+        </li>
+        <li>
+          <label for="FridayStart">Friday: </label>
+          <input type="time" id="FridayStart" name="Friday1" value="17:00">
+          <label for="FridayStop">to </label>
+          <input type="time" id="FridayStop" name="Friday2" value="18:00">
+        </li>
+        <li>
+          <label for="SaturdayStart">Saturday: </label>
+          <input type="time" id="SaturdayStart" name="Saturday1" value="17:00">
+          <label for="SaturdayStop">to </label>
+          <input type="time" id="SaturdayStop" name="Saturday2" value="18:00">
+        </li>
+        <li>
+          <label for="SundayStart">Sunday: </label>
+          <input type="time" id="SundayStart" name="Sunday1" value="17:00">
+          <label for="SundayStop">to </label>
+          <input type="time" id="SundayStop" name="Sunday2" value="18:00">
+        </li>
+        <li>
+            <select name="justDrinks" id="hhType" >
+              <option value="">Select type</option>
+              <option value="">Food and Drink</option>
+              <option value="">Just Drinks</option>
+              <option value="">Just Food</option>
+            </select>
+        </li>
+      </ul>
+      <input class="addButton" type="submit" value="Add >">
+    </form>
+
+
+  </main>
+  <footer>
+  </footer>
+  <script src="assets/form.js">
+
+  </script>
+</body>
+</html>

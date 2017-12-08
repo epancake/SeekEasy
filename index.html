@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>SeekEasy</title>
+  <link href="https://fonts.googleapis.com/css?family=Cuprum:400,700" rel="stylesheet">
+  <link rel="stylesheet" href="assets/reset.css">
+  <link rel="stylesheet" href="assets/main.css">
+</head>
+<body>
+  <header>
+    <a href="index.html" class="home"><img src="assets/img/home.png" alt="logo" class="home"/></a>
+    <h1>SeekEasy</h1>
+    <a href="add.html" class="add"><img src="assets/img/greenAddIcon.png" alt="logo" class="add"/></a>
+  </header>
+  <main>
+    <section><h2 id="homeSubHeader">Find the perfect happy hour</h2></section>
+    <form action="#" id="dayForm" >
+      <select name="dayDropdown" id="days" onchange="setDay(this)">
+        <option value="default">Select a day of the week</option>
+        <option value="Monday">Monday</option>
+        <option value="Tuesday">Tuesday</option>
+        <option value="Wednesday">Wednesday</option>
+        <option value="Thursday">Thursday</option>
+        <option value="Friday">Friday</option>
+        <option value="Saturday">Saturday</option>
+        <option value="Sunday">Sunday</option>
+      </select>
+      <input class="goButton" type="submit" value="Go >">
+    </form>
+  </main>
+  <footer>
+    <div><input type="text" value="About" onclick="window.location='/about.html';"></div>
+  </footer>
+  <script src="assets/app.js">
+
+  </script>
+</body>
+</html>
