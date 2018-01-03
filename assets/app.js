@@ -1,5 +1,4 @@
 const apiURL = 'https://seekeasyserver.herokuapp.com/';
-// const apiURL = 'http://localhost:3000/';
 var responseOfHours;
 var daySelected;
 var $main = document.querySelector('main');
@@ -26,7 +25,7 @@ function removeFirstPage() {
   $h2.className = 'hidden';
   var $form = document.querySelector('form');
   $form.className = 'hidden';
-  $form.removeAttribute('id')
+  $form.removeAttribute('id');
 }
 
 function generateHeader () {
@@ -48,30 +47,28 @@ function generateResults () {
   $main.appendChild(resultsDiv);
   resultsDiv.className = 'results';
   responseOfHours.sort(function(a, b) {
-  var nameA = a.name.toUpperCase(); // ignore upper and lowercase
-  var nameB = b.name.toUpperCase(); // ignore upper and lowercase
-  if (nameA < nameB) {
-    return -1;
-  }
-  if (nameA > nameB) {
-    return 1;
-  }
-
-  // names must be equal
-  return 0;
-});
+    var nameA = a.name.toUpperCase();
+    var nameB = b.name.toUpperCase();
+    if (nameA < nameB) {
+      return -1;
+    }
+    if (nameA > nameB) {
+      return 1;
+    }
+    return 0;
+  });
   responseOfHours.map(item => {
-      var hours = (item[daySelected])
-      if (hours) {
+    var hours = (item[daySelected]);
+    if (hours) {
       var $li = document.createElement('li');
       var liText = document.createTextNode(item.name + ': ' + hours);
       $li.appendChild(liText);
       $li.className = 'resultItem';
       $li.addEventListener('click', function(event) {
         var $h2 = document.querySelector('.h2Header');
-        $h2.textContent = item.name
+        $h2.textContent = item.name;
         var $p = document.getElementsByClassName('instrP')[0];
-        $p.className = 'hidden'
+        $p.className = 'hidden';
         var $ul = document.querySelector('ul');
         $ul.className = 'hidden';
 
@@ -83,13 +80,13 @@ function generateResults () {
         $HappyHoursUl = document.createElement('ul');
         $HappyHoursUl.className = 'resultsUl times';
 
-        $li1 = document.createElement('li')
+        $li1 = document.createElement('li');
         $li1.textContent = item.address;
         $li2 = document.createElement('li');
         $li2.textContent = item.type;
         $li3 = document.createElement('li');
         var $webAnchor = document.createElement('a');
-        $webAnchor.href = item.website
+        $webAnchor.href = item.website;
         $webAnchor.textContent = item.website;
         $li3.className = 'break';
 
@@ -97,7 +94,7 @@ function generateResults () {
         $restUl.appendChild($li1);
         $restUl.appendChild($li2);
         $restUl.appendChild($li3);
-        $li3.appendChild($webAnchor)
+        $li3.appendChild($webAnchor);
 
 
         if (item.Monday) {
@@ -135,11 +132,11 @@ function generateResults () {
           $li10.textContent = 'Sunday: ' + item.Sunday;
           $HappyHoursUl.appendChild($li10);
         }
-        resultsDiv2.appendChild($restUl)
+        resultsDiv2.appendChild($restUl);
         resultsDiv2.appendChild($HappyHoursUl);
       });
       resultsList.appendChild($li);
       resultsDiv.appendChild(resultsList);
     }
-  })
+  });
 }

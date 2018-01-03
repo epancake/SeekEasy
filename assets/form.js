@@ -1,5 +1,4 @@
 const apiURL = 'https://seekeasyserver.herokuapp.com/';
-// const apiURL = 'http://localhost:3000/';
 let typeOfHH
 
 function setType(sel) {

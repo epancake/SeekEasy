@@ -7,19 +7,9 @@ body {
   width: 100vw;
   display: flex;
   flex-direction: column;
-  /*display: grid;*/
-  /*grid-template-columns: 100%;
-  grid-template-rows: 10% auto 10%;*/
 }
 
 header {
-  /*grid-column-start: 1;
-  grid-column-end: 2;
-  grid-row-start: 1;
-  grid-row-end: 2;
-  display: grid;
-  grid-template-columns: 1fr 3fr 1fr;
-  grid-template-rows: 1fr;*/
   display: flex;
   justify-content: space-around;
 }
@@ -30,13 +20,6 @@ main {
   height: 80vh;
   background-repeat: no-repeat;
   flex-direction: column;
-  /*grid-column-start: 1;
-  grid-column-end: 2;
-  grid-row-start: 2;
-  grid-row-end: 3;*/
-  /*display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 15% auto;*/
 }
 
 h1 {
@@ -64,22 +47,15 @@ h1 {
 
 section {
   background-color: hsla(0, 0%, 20%, 0.5);
-  /*grid-column-start: 1;
-  grid-column-end: 2;
-  grid-row-start: 1;
-  grid-row-end: 2;*/
-  /*display: grid;*/
   display: flex;
   justify-content: center;
   flex-direction: column;
 }
 
 h2 {
-  color: white;
+  color: #ffffff;
   text-align: center;
   align-self: center;
-  /*padding: .5rem 0 0 0;
-  margin: 0 0 .5rem 0;*/
   font-size: 1.7rem;
 }
 
@@ -92,7 +68,7 @@ h2 {
 }
 
 header, footer {
-  background-color: red;
+  background-color: rgb(157, 13, 13);
   height: 10vh
 }
 
@@ -106,14 +82,13 @@ select {
    overflow: hidden;
    padding: 5px 10px;
    text-overflow: ellipsis;
-   /*white-space: nowrap;*/
    width: 16rem;
    height: 5vh;
 }
 
 .goButton, .addButton {
   text-decoration: none;
-  color: white;
+  color: #ffffff;
   text-transform: uppercase;
   display: inline-block;
   font-weight: bold;
@@ -151,10 +126,6 @@ select {
 }
 
 footer {
-  /*grid-column-start: 1;
-  grid-column-end: 3;
-  grid-row-start: 5;
-  grid-row-end: 6;*/
   display: flex;
   justify-content: center;
 }
@@ -165,27 +136,19 @@ footer input {
   color: #555;
   justify-self: center;
   text-align: center;
-  /*grid-column-start: 1;
-  grid-column-end: 3;
-  grid-row-start: 5;
-  grid-row-end: 6;*/
   margin-top: 1rem;
   border-radius: 5px;
 }
 
 .results {
   background-color: hsla(0, 0%, 20%, 0.5);
-  /*grid-column-start: 1;
-  grid-column-end: 2;
-  grid-row-start: 2;
-  grid-row-end: 3;*/
   display: flex;
   flex-direction: column;
   justify-content: space-around;
 }
 
 .instrP {
-  color: red;
+  color: #ffffff;
   text-align: center;
   align-self: center;
   z-index: 3;
@@ -202,10 +165,10 @@ ul {
 }
 
 .resultItem {
-  color: white;
+  color: rgb(133, 165, 198);
   font-size: 1.25rem;
-  padding: .6rem
-
+  padding: .6rem;
+  text-decoration: underline;
 }
 
 .aboutText {
@@ -216,7 +179,7 @@ ul {
 }
 
 p {
-  color: white;
+  color: #ffffff;
   grid-row: 2;
   grid-column: 1;
   padding: 1rem;
@@ -225,7 +188,7 @@ p {
 }
 
 .resultsUl {
-  color: white;
+  color: #ffffff;
   line-height: 1.5;
   font-size: 1.2rem;
   padding: 0 1rem 0 1rem;
@@ -247,7 +210,7 @@ a {
 }
 
 #addForm {
-  color: white;
+  color: #ffffff;
   background-color: hsla(0, 0%, 20%, 0.5);
   line-height: 1.9rem;
   font-size: 1.2rem;
