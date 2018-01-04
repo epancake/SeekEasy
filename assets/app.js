@@ -58,6 +58,8 @@ function generateResults () {
     return 0;
   });
   responseOfHours.map(item => {
+    daySelected = daySelected.toLowerCase();
+    console.log(daySelected)
     var hours = (item[daySelected]);
     if (hours) {
       var $li = document.createElement('li');
@@ -97,39 +99,39 @@ function generateResults () {
         $li3.appendChild($webAnchor);
 
 
-        if (item.Monday) {
+        if (item.monday) {
           $li4 = document.createElement('li');
-          $li4.textContent = 'Monday: ' + item.Monday;
+          $li4.textContent = 'Monday: ' + item.monday;
           $HappyHoursUl.appendChild($li4);
         }
-        if (item.Tuesday) {
+        if (item.tuesday) {
           $li5 = document.createElement('li');
-          $li5.textContent = 'Tuesday: ' + item.Tuesday;
+          $li5.textContent = 'Tuesday: ' + item.tuesday;
           $HappyHoursUl.appendChild($li5);
         }
-        if (item.Wednesday) {
+        if (item.wednesday) {
           $li6 = document.createElement('li');
-          $li6.textContent = 'Wednesday: ' + item.Wednesday;
+          $li6.textContent = 'Wednesday: ' + item.wednesday;
           $HappyHoursUl.appendChild($li6);
         }
-        if (item.Thursday) {
+        if (item.thursday) {
           $li7 = document.createElement('li');
-          $li7.textContent = 'Thursday: ' + item.Thursday;
+          $li7.textContent = 'Thursday: ' + item.thursday;
           $HappyHoursUl.appendChild($li7);
         }
-        if (item.Friday) {
+        if (item.friday) {
           $li8 = document.createElement('li');
-          $li8.textContent = 'Friday: ' + item.Friday;
+          $li8.textContent = 'Friday: ' + item.friday;
           $HappyHoursUl.appendChild($li8);
         }
-        if (item.Saturday) {
+        if (item.saturday) {
           $li9 = document.createElement('li');
-          $li9.textContent = 'Saturday: ' + item.Saturday;
+          $li9.textContent = 'Saturday: ' + item.saturday;
           $HappyHoursUl.appendChild($li9);
         }
-        if (item.Sunday) {
+        if (item.sunday) {
           $li10 = document.createElement('li');
-          $li10.textContent = 'Sunday: ' + item.Sunday;
+          $li10.textContent = 'Sunday: ' + item.sunday;
           $HappyHoursUl.appendChild($li10);
         }
         resultsDiv2.appendChild($restUl);
